@@ -1,0 +1,31 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+.read-more-container {
+    max-width: auto;
+    margin: 20px auto;
+}
+
+.read-more-content {
+    max-height: 50px; /* সীমিত উচ্চতা */
+    overflow: hidden; /* লুকানো অংশ */
+    transition: max-height 0.4s ease; /* মসৃণ অ্যানিমেশন */
+}
+
+.read-more-toggle:checked ~ .read-more-content {
+    max-height: 500px; /* কন্টেন্ট পুরোপুরি দেখাতে যথেষ্ট উচ্চতা */
+}
+
+.read-more-toggle {
+    display: none; /* চেকবক্স লুকানো */
+}
+
+.read-more-label {
+    display: inline-block;
+    margin-top: 10px;
+    color: blue;
+    cursor: pointer;
+    text-decoration: underline;
+}
